@@ -1,0 +1,42 @@
+.Survey {
+    margin: auto;
+    height: 1000px;
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+
+.checkbox-div{
+    display: inline-block;
+    position: relative;
+    top: 20%; 
+    padding: 40px;
+}
+
+Checkbox{
+    padding: 10px;
+}
+
+.survey-icon{
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top: 20%;
+    padding: 40px;
+}
+
+.question-div{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 600px;
+}
