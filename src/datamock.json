@@ -1,0 +1,98 @@
+[
+	{
+		"id": 0,
+		"username": "chris",
+		"password": "333asdfasf",
+		"address": {
+			"flatNo": "Flat A",
+			"streetName": "Acton road",
+			"city": "Bristol",
+			"postcode": "BT3 0AD"
+		},
+		"subscription": { "plan": "vegan", "frequency": 5, "nextPayment": "04/02/2022" },
+		"payment": {
+			"cardNo": "690382394008989",
+			"cardOption": "visa"
+		}
+	},
+	{
+		"id": 1,
+		"username": "annie",
+		"password": "23345fdfghf",
+		"address": {
+			"flatNo": "Flat C",
+			"streetName": "13 Victoria road",
+			"city": "Cambridge",
+			"postcode": "CB1 3AG"
+		},
+		"subscription": { "plan": "standard", "frequency": 13, "nextPayment": "04/01/2022" },
+		"payment": {
+			"cardNo": "690382394008989",
+			"cardOption": "visa"
+		}
+	},
+	{
+		"id": 2,
+		"username": "ricardo",
+		"password": "54d6gfh",
+		"address": {
+			"flatNo": "Flat 18",
+			"streetName": "3 Offord Road",
+			"city": "London",
+			"postcode": "SW3 3YZ"
+		},
+		"subscription": { "plan": "chef", "frequency": 7, "nextPayment": "22/12/2022" },
+		"payment": {
+			"cardNo": "690382394008989",
+			"cardOption": "visa"
+		}
+	},
+	{
+		"id": 3,
+		"username": "misha",
+		"password": "3Safwefa33",
+		"address": {
+			"flatNo": "Flat F",
+			"streetName": "12 Old Hall Street",
+			"city": "Liverpool",
+			"postcode": "LP1 3BJ"
+		},
+		"subscription": { "plan": "easyCook", "frequency": 6, "nextPayment": "24/07/2022" },
+		"payment": {
+			"cardNo": "690382394008989",
+			"cardOption": "master"
+		}
+	},
+	{
+		"id": 4,
+		"username": "wayne",
+		"password": "57jklsidfj",
+		"address": {
+			"flatNo": "Flat 4",
+			"streetName": "44 Clayton Street",
+			"city": "Newcastle",
+			"postcode": "NC8 4EC"
+		},
+		"subscription": { "plan": "noGluten", "frequency": 5, "nextPayment": "07/06/2022" },
+		"payment": {
+			"cardNo": "690382394008989",
+			"cardOption": "master"
+		}
+	},
+	{
+		"id": 5,
+		"username": "Annie",
+		"password": "689sdflkgjre",
+		"address": {
+			"flatNo": "Flat A",
+			"streetName": "Abbey Square",
+			"city": "Reading",
+			"postcode": "RG1 3AG"
+		},
+		"subscription": { "plan": "chef", "frequency": 10, "nextPayment": "01/09/2022" },
+		"payment": {
+			"cardNo": "690382394008989",
+			"cardOption": "master"
+		}
+	}
+]

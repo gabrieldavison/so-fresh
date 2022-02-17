@@ -1,13 +1,10 @@
 import './App.css';
 import AccountPage from './Account/AccountPage';
+import users from './datamock.json';
 
 function App() {
-	const user = {
-		username: 'jennyang',
-		subscription: {
-			nextPayment: '13/04/2022'
-		}
-	};
+	const user = users[3];
+
 	return (
 		<div className="App">
 			<AccountPage user={user} />

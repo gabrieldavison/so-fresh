@@ -30,9 +30,9 @@
 	display: inline;
 }
 
-.heavy-meat {
-	color: #c70000;
-	border-color: #c70000;
+.vegan {
+	color: #85cc77;
+	border-color: #85cc77;
 }
 
 .address-inputs {
@@ -73,6 +73,15 @@ input::placeholder {
 	margin-right: 1rem;
 }
 
+.ml {
+	margin-left: 1rem;
+}
+
+.card-info {
+	display: flex;
+	justify-content: center;
+}
+
 .card-option {
 	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 	border: 2px solid;
@@ -84,5 +93,11 @@ input::placeholder {
 	font-weight: 500;
 }
 
+.card-logo {
+	display: inline;
+	height: 50px;
+}
+
 .next-date {
+	text-decoration: underline;
 }
