@@ -3,21 +3,39 @@ import data from "./data.js";
 import RecipeSummary from "./RecipeSummary";
 
 const Subscription = () => {
-  console.log(data);
   return (
-    <>
+    <div>
+      <h1>So Fresh</h1>
       <section>
-        <h1>So Fresh</h1>
-        {data.subscriptionImage ?? <img src={data.subscriptionImage}></img>}
         <h2>{data.subscriptionTitle}</h2>
-        <p>{data.subscriptionSummary}</p>
+        <div style={styles.colWrapper}>
+          <div>
+            <img
+              style={styles.subscriptionImage}
+              src={data.subscriptionImage}
+            ></img>
+          </div>
+          <div>
+            <p>{data.subscriptionSummary}</p>
+          </div>
+        </div>
       </section>
       <section>
         {data.recipes.map((recipe) => (
           <RecipeSummary key={recipe.title} data={recipe} />
         ))}
       </section>
-    </>
+    </div>
   );
+};
+
+const styles = {
+  subscriptionImage: {
+    width: "500px",
+  },
+  colWrapper: {
+    display: "flex",
+    flexDirection: "row",
+  },
 };
 export default Subscription;

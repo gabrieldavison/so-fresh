@@ -3,12 +3,18 @@ import React from "react";
 const RecipeSummary = ({ data }) => {
   console.log(data);
   return (
-    <div>
+    <section>
       <h3>{data.title}</h3>
-      {data.recipeImage ?? <img src={data.recipeImage}></img>}
+      <img style={styles.recipeImage} src={data.recipeImage}></img>
       <p>{data.recipeSummary}</p>
-    </div>
+    </section>
   );
+};
+
+const styles = {
+  recipeImage: {
+    width: "200px",
+  },
 };
 
 export default RecipeSummary;
