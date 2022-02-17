@@ -1,0 +1,88 @@
+.AccountPage {
+	height: 100%;
+	color: #0500ff;
+}
+
+.btn {
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	border: 2px solid;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	font-weight: 500;
+
+	transition: box-shadow 0.5s;
+}
+
+.btn:hover {
+	box-shadow: 5px 5px;
+}
+
+.address-input {
+	display: block;
+}
+
+.plan > p,
+.card-info > p,
+.next-payment > p {
+	display: inline;
+}
+
+.heavy-meat {
+	color: #c70000;
+	border-color: #c70000;
+}
+
+.address-inputs {
+	width: fit-content;
+}
+
+.address {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	border: none;
+	box-sizing: border-box;
+	border-radius: 7px;
+	transition: box-shadow 0.5s;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 7px;
+	color: #0500ff;
+}
+
+input:focus {
+	border: 3px solid #0500ff;
+}
+
+input::placeholder {
+	color: #0500ff;
+	font-weight: 200;
+}
+
+.mt {
+	margin-top: 1rem;
+}
+
+.mr {
+	margin-right: 1rem;
+}
+
+.card-option {
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	border: 2px solid;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	font-weight: 500;
+}
+
+.next-date {
+}
