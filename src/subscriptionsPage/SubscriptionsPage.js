@@ -3,7 +3,7 @@ import Header from "./Header";
 import Recommended from "./Recommended";
 import SubscriptionsGrid from "./SubscriptionsGrid";
 import Footer from "./Footer";
-import "./subscriptions.css";
+import "./SubscriptionsPage.css";
 
 const SubscriptionsPage = () => {
   return (
