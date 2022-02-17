@@ -1,28 +1,30 @@
 import React from "react";
 import data from "./data.js";
-import RecipeSummary from "./RecipeSummary";
+import RecipeCard from "./RecipeCard";
 
 const Subscription = () => {
   return (
-    <div>
+    <div style={styles.subscriptionPage}>
       <h1>So Fresh</h1>
       <section>
         <h2>{data.subscriptionTitle}</h2>
-        <div style={styles.colWrapper}>
+        <div style={styles.flexRow}>
           <div>
             <img
               style={styles.subscriptionImage}
               src={data.subscriptionImage}
             ></img>
           </div>
-          <div>
+          <div style={styles.subscriptionSummary}>
             <p>{data.subscriptionSummary}</p>
           </div>
         </div>
       </section>
-      <section>
+      <section style={styles.flexRow}>
         {data.recipes.map((recipe) => (
-          <RecipeSummary key={recipe.title} data={recipe} />
+          <div style={styles.recipeSummary}>
+            <RecipeCard key={recipe.title} data={recipe} />
+          </div>
         ))}
       </section>
     </div>
@@ -30,12 +32,25 @@ const Subscription = () => {
 };
 
 const styles = {
+  subscriptionPage: {
+    maxWidth: "1000px",
+    margin: "auto",
+  },
   subscriptionImage: {
     width: "500px",
   },
-  colWrapper: {
+  flexRow: {
     display: "flex",
     flexDirection: "row",
+  },
+  recipeSummary: {
+    paddingRight: "1rem",
+    justifyContent: "center",
+  },
+  subscriptionSummary: {
+    display: "flex",
+    alignItems: "center",
+    padding: "1rem",
   },
 };
 export default Subscription;

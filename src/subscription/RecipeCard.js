@@ -1,6 +1,6 @@
 import React from "react";
 
-const RecipeSummary = ({ data }) => {
+const RecipeCard = ({ data }) => {
   console.log(data);
   return (
     <section>
@@ -13,8 +13,8 @@ const RecipeSummary = ({ data }) => {
 
 const styles = {
   recipeImage: {
-    width: "200px",
+    maxWidth: "200px",
   },
 };
 
-export default RecipeSummary;
+export default RecipeCard;
