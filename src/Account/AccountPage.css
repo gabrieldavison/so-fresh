@@ -54,6 +54,7 @@ input {
 	margin-bottom: 10px;
 	padding: 7px;
 	color: #0500ff;
+	height: -webkit-fill-available;
 }
 
 input:focus {
@@ -76,10 +77,22 @@ input::placeholder {
 .ml {
 	margin-left: 1rem;
 }
+.pts {
+	padding-top: 0.3rem;
+}
+
+.pt1 {
+	padding-top: 1rem;
+}
+
+.block {
+	display: block;
+}
 
 .card-info {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .card-option {
@@ -100,4 +113,17 @@ input::placeholder {
 
 .next-date {
 	text-decoration: underline;
+}
+
+.input-wrapper {
+	position: relative;
+}
+.label {
+	display: inline-block;
+	font-size: 0.7rem;
+	font-weight: 600;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: max-content;
 }
