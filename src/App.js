@@ -1,5 +1,6 @@
-import "./App.css";
-import Survey from "./SurveyPage/Survey.react";
+import "./Account/RemoveDefaultStyle.css";
+import AccountPage from "./Account/AccountPage";
+import users from "./datamock.json";
 
 function App() {
   return (

@@ -30,40 +30,60 @@ function AccountPage({ user }) {
 				</p>
 				<div className="password">
 					<p>
-						<b>PASSWORD</b> is <input type="password" placeholder="Password" value={user.password} />
+						<b>PASSWORD</b> {`is `}
+						<span className="input-wrapper pt1">
+							<span className="label">Password</span>
+							<input type="password" placeholder="Password" value={user.password} />
+						</span>
 					</p>
 				</div>
+
 				<div className="address">
 					<p>
 						<b>ADDRESS</b> is
 					</p>
 					<div className="address-inputs">
-						<input
-							type="text"
-							placeholder="Flat no."
-							className="address-input"
-							value={user.address.flatNo}
-						/>
-						<input
-							type="text"
-							placeholder="Street name"
-							className="address-input"
-							value={user.address.streetName}
-						/>
-						<input type="text" placeholder="City" className="address-input" value={user.address.city} />
-						<input
-							type="text"
-							placeholder="Post code"
-							className="address-input"
-							value={user.address.postcode}
-						/>
+						<span className="input-wrapper block pts">
+							<label className="label">Flat No.</label>
+							<input
+								type="text"
+								placeholder="Flat no."
+								className="address-input"
+								value={user.address.flatNo}
+							/>
+						</span>
+						<span className="input-wrapper block pts">
+							<label className="label">Street name</label>
+							<input
+								type="text"
+								placeholder="Street name"
+								className="address-input"
+								value={user.address.streetName}
+							/>
+						</span>
+						<span className="input-wrapper block pts">
+							<label className="label">City</label>
+							<input type="text" placeholder="City" className="address-input" value={user.address.city} />
+						</span>
+						<span className="input-wrapper block pts">
+							<label className="label">Post code</label>
+							<input
+								type="text"
+								placeholder="Post code"
+								className="address-input"
+								value={user.address.postcode}
+							/>
+						</span>
 					</div>
 				</div>
 				<div className="card-info">
-					<p>
+					<p className="mr">
 						<b>Card No.</b> {`is `}
 					</p>
-					<input type="text" placeholder="No." value={user.payment.cardNo} className="ml" />
+					<span className="input-wrapper pts">
+						<label className="label">Card No.</label>
+						<input type="text" placeholder="No." value={user.payment.cardNo} />
+					</span>
 					{user.payment.cardOption === 'visa' ? (
 						<img className="card-logo ml" src={visaLogo} alt="" />
 					) : (
