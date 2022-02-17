@@ -3,7 +3,7 @@ import React from "react";
 const RecipeCard = ({ data }) => {
   console.log(data);
   return (
-    <section>
+    <section style={styles.recipeCard}>
       <h3>{data.title}</h3>
       <img style={styles.recipeImage} src={data.recipeImage}></img>
       <p>{data.recipeSummary}</p>
@@ -13,7 +13,7 @@ const RecipeCard = ({ data }) => {
 
 const styles = {
   recipeImage: {
-    maxWidth: "200px",
+    maxWidth: "100%",
   },
 };
 

@@ -22,7 +22,7 @@ const Subscription = () => {
       </section>
       <section style={styles.flexRow}>
         {data.recipes.map((recipe) => (
-          <div style={styles.recipeSummary}>
+          <div style={styles.recipeCard}>
             <RecipeCard key={recipe.title} data={recipe} />
           </div>
         ))}
@@ -35,6 +35,7 @@ const styles = {
   subscriptionPage: {
     maxWidth: "1000px",
     margin: "auto",
+    backgroundColor: "#FFE7E7",
   },
   subscriptionImage: {
     width: "500px",
@@ -43,9 +44,10 @@ const styles = {
     display: "flex",
     flexDirection: "row",
   },
-  recipeSummary: {
+  recipeCard: {
     paddingRight: "1rem",
     justifyContent: "center",
+    width: "20%",
   },
   subscriptionSummary: {
     display: "flex",
