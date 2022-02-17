@@ -17,8 +17,18 @@
     padding: 40px;
 }
 
-Checkbox{
-    padding: 10px;
+.default-blue-text {
+    font-size:20px;
+    font-weight: bold;
+    color: #0500ff;
+  }
+  
+span{
+    font-size: 40px;;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    color: #0500ff;
 }
 
 .survey-icon{
