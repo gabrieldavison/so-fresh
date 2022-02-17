@@ -21,7 +21,7 @@ const MealPlan = ({ mealPlanName, meals }) => {
         width="120"
         height="120"
       />
-      <div class="buttonContainer">
+      <div className="buttonContainer">
         <Button
           onClick={() => mealsIndex > 0 && setMealsIndex((mealsIndex -= 1))}
         />
@@ -32,7 +32,7 @@ const MealPlan = ({ mealPlanName, meals }) => {
           }
         />
       </div>
-      <h3 class="label">{mealPlanName}</h3>
+      <h3 className="label">{mealPlanName}</h3>
     </div>
   );
 };

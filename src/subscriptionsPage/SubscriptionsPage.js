@@ -3,12 +3,13 @@ import Header from "./Header";
 import Recommended from "./Recommended";
 import SubscriptionsGrid from "./SubscriptionsGrid";
 import Footer from "./Footer";
+import "./subscriptions.css";
 
 const SubscriptionsPage = () => {
   return (
-    <div class="subscriptionPage">
+    <div className="subscriptionPage">
       <Header />
-      <div class="subscriptions">
+      <div className="subscriptions">
         <h1>SUBSCRIPTIONS</h1>
         <Recommended mealPlans={recommended} />
         <SubscriptionsGrid mealPlanRows={mealPlans} />
