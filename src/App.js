@@ -5,7 +5,7 @@ import users from "./datamock.json";
 function App() {
   return (
     <body>
-      <Survey />
+      <AccountPage user={users[0]} />
     </body>
   );
 }
