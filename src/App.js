@@ -1,14 +1,11 @@
 import "./App.css";
-import AccountPage from "./Account/AccountPage";
-import users from "./datamock.json";
+import Survey from "./SurveyPage/Survey.react";
 
 function App() {
-  const user = users[3];
-
   return (
-    <div className="App">
-      <AccountPage user={user} />
-    </div>
+    <body>
+      <Survey />
+    </body>
   );
 }
 
