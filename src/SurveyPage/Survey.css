@@ -1,12 +1,19 @@
 .Survey {
     margin: auto;
-    height: 1000px;
-    width: 20%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 80%;
+    position: relative;
     padding: 10px;
+}
+.survey-page{
+    height: 100%;
+	color: #0500ff;
+	text-align: center;
+	font-family: 'Roboto';
+	background: #ffe7e7;
+	height: 100vh;
+	width: 100vw;
+	font-size: 20px;
 }
 
 
@@ -17,16 +24,28 @@
     padding: 40px;
 }
 
-Checkbox{
-    padding: 10px;
+.default-blue-text {
+    font-size:20px;
+    font-weight: bold;
+    color: #0500ff;
+  }
+  
+span{
+    font-size: 40px;;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    color: #0500ff;
 }
 
 .survey-icon{
     position: relative;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 600px;
     top: 20%;
     padding: 40px;
 }
@@ -38,5 +57,5 @@ Checkbox{
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 600px;
+    width: 100%;
 }
