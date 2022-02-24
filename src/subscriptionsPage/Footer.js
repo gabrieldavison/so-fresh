@@ -1,11 +1,12 @@
 import React from "react";
+import "./Footer.css";
 
-const Header = () => {
+const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer-K">
       <h1>Footer</h1>
     </div>
   );
 };
 
-export default Header;
+export default Footer;

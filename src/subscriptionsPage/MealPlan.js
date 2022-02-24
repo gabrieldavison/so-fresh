@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import "./MealPlan.css";
 
 /*
 Each Meal Plan is something like this:
@@ -21,7 +22,7 @@ const MealPlan = ({ mealPlanName, meals }) => {
         width="120"
         height="120"
       />
-      <div className="buttonContainer">
+      <div className="buttonContainer-K">
         <Button
           onClick={() => mealsIndex > 0 && setMealsIndex((mealsIndex -= 1))}
         />
@@ -32,7 +33,7 @@ const MealPlan = ({ mealPlanName, meals }) => {
           }
         />
       </div>
-      <h3 className="label">{mealPlanName}</h3>
+      <h3 className="label-K">{mealPlanName}</h3>
     </div>
   );
 };

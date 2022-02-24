@@ -1,5 +1,6 @@
 import React from "react";
 import SubscriptionRow from "./SubscriptionRow";
+import "./SubscriptionGrid.css";
 
 /*
     mealPlanRows looks something like this:
@@ -21,7 +22,7 @@ import SubscriptionRow from "./SubscriptionRow";
 */
 const SubscriptionsGrid = ({ mealPlanRows }) => {
   return (
-    <div className="subscriptionGrid">
+    <div className="subscriptionGrid-K">
       {mealPlanRows.map((mealPlanRow) => {
         return <SubscriptionRow mealPlans={mealPlanRow} />;
       })}

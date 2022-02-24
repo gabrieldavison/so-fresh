@@ -1,0 +1,9 @@
+.buttonContainer-K {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.label-K {
+  padding-left: 20px;
+}
