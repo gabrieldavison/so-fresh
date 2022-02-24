@@ -5,6 +5,16 @@
     position: relative;
     padding: 10px;
 }
+.survey-page{
+    height: 100%;
+	color: #0500ff;
+	text-align: center;
+	font-family: 'Roboto';
+	background: #ffe7e7;
+	height: 100vh;
+	width: 100vw;
+	font-size: 20px;
+}
 
 
 .checkbox-div{

@@ -24,35 +24,37 @@ export default function Survey() {
   ];
 
   return (
-    <div className="Survey">
-      <Carousel>
-        {questionData.map((question) => {
-          return (
-            <div key={questionData.indexOf(question)}>
-              <div className="question-div">
-                <img
-                  src={question.image}
-                  className="survey-icon"
-                  alt="Not found"
-                />
-                <span>{question.question}</span>
-              </div>
-              <div className="checkbox-div">
-                {question.checkBoxData.map((item) => {
-                  return (
-                    <div>
-                      <input type="Checkbox" value={item} />
-                      <label for={item} className="default-blue-text">
-                        {item}
-                      </label>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
-      </Carousel>
+    <div className = 'survey-page'>
+        <div className="Survey">
+        <Carousel>
+            {questionData.map((question) => {
+            return (
+                <div key={questionData.indexOf(question)}>
+                <div className="question-div">
+                    <img
+                    src={question.image}
+                    className="survey-icon"
+                    alt="Not found"
+                    />
+                    <span>{question.question}</span>
+                </div>
+                <div className="checkbox-div">
+                    {question.checkBoxData.map((item) => {
+                    return (
+                        <div>
+                        <input type="Checkbox" value={item} />
+                        <label for={item} className="default-blue-text">
+                            {item}
+                        </label>
+                        </div>
+                    );
+                    })}
+                </div>
+                </div>
+            );
+            })}
+        </Carousel>
+        </div>
     </div>
   );
 }
