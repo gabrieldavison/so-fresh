@@ -1,10 +1,11 @@
 import React from "react";
 import data from "./data";
+import Header from "../subscriptionsPage/Header";
 
 const Recipe = () => {
   return (
     <div style={styles.recipe}>
-      <h1>So Fresh</h1>
+      <Header />
       <h2>{data.recipeTitle}</h2>
       <div style={styles.recipeSummary}>
         <div>
