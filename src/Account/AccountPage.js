@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './AccountPage.css';
 import './RemoveDefaultStyle.css';
 import visaLogo from '../visa-logo.png';
@@ -15,7 +14,7 @@ function AccountPage({ user }) {
 
 	return (
 		<div className="AccountPage">
-			<h1>Your Info.</h1>
+			<h1 className="title">Your Info.</h1>
 			<form action="" onSubmit={(e) => e.preventDefault()}>
 				<div className="plan">
 					<p>You are on </p>
@@ -32,9 +31,9 @@ function AccountPage({ user }) {
 				<div className="password">
 					<p>
 						<b>PASSWORD</b> {`is `}
-						<span className="input-wrapper pt1">
+						<span className="input-wrapper pt1 ml">
 							<label className="label">Password</label>
-							<input type="password" placeholder="Password" value={user.password} />
+							<input type="password" placeholder="Password" value={user.password} className="ac-input" />
 						</span>
 					</p>
 				</div>
@@ -43,13 +42,13 @@ function AccountPage({ user }) {
 					<p>
 						<b>ADDRESS</b> is
 					</p>
-					<div className="address-inputs">
+					<div className="address-inputs ml">
 						<span className="input-wrapper block pts">
 							<label className="label">Flat No.</label>
 							<input
 								type="text"
 								placeholder="Flat no."
-								className="address-input"
+								className="address-input ac-input"
 								value={user.address.flatNo}
 							/>
 						</span>
@@ -58,20 +57,25 @@ function AccountPage({ user }) {
 							<input
 								type="text"
 								placeholder="Street name"
-								className="address-input"
+								className="address-input ac-input"
 								value={user.address.streetName}
 							/>
 						</span>
 						<span className="input-wrapper block pts">
 							<label className="label">City</label>
-							<input type="text" placeholder="City" className="address-input" value={user.address.city} />
+							<input
+								type="text"
+								placeholder="City"
+								className="address-input ac-input"
+								value={user.address.city}
+							/>
 						</span>
 						<span className="input-wrapper block pts">
 							<label className="label">Post code</label>
 							<input
 								type="text"
 								placeholder="Post code"
-								className="address-input"
+								className="address-input ac-input"
 								value={user.address.postcode}
 							/>
 						</span>
@@ -83,7 +87,7 @@ function AccountPage({ user }) {
 					</p>
 					<span className="input-wrapper pts">
 						<label className="label">Card No.</label>
-						<input type="text" placeholder="No." value={user.payment.cardNo} />
+						<input type="text" placeholder="No." className="ac-input" value={user.payment.cardNo} />
 					</span>
 					{user.payment.cardOption === 'visa' ? (
 						<img className="card-logo ml" src={visaLogo} alt="" />
