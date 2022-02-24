@@ -5,7 +5,6 @@ import Recipe from "./recipe/Recipe";
 import Survey from "./SurveyPage/survey.react";
 import users from "./datamock.json";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Survey from "./SurveyPage/survey.react";
 import "./Normalize.css";
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
           element={<AccountPage user={users[0]} />}
         ></Route>
         <Route path="/subscription" element={<Subscription />}></Route>
-        <Route path="/survey" element= {<Survey/>}></Route>
+        <Route path="/survey" element={<Survey />}></Route>
         <Route path="/recipe" element={<Recipe />}></Route>
         <Route path="/survey" element={<Survey />}></Route>
       </Routes>
