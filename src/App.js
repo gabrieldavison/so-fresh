@@ -5,6 +5,7 @@ import Recipe from "./recipe/Recipe";
 import users from "./datamock.json";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Survey from "./SurveyPage/survey.react";
+import "./Normalize.css";
 
 function App() {
   return (
