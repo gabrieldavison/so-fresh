@@ -27,13 +27,13 @@ function AccountPage({ user }) {
           </button>
         </div>
 
-        <p className="username">
+        <p className="username mb4">
           Your <b>ID</b> is {user.username}.
         </p>
         <div className="password">
           <p>
             <b>PASSWORD</b> {`is `}
-            <span className="input-wrapper pt1 ml">
+            <span className="input-wrapper pt1p5 ml mt4">
               <label className="label">Password</label>
               <input
                 type="password"
@@ -50,7 +50,7 @@ function AccountPage({ user }) {
             <b>ADDRESS</b> is
           </p>
           <div className="address-inputs ml">
-            <span className="input-wrapper block pts">
+            <span className="input-wrapper block pt1 mb">
               <label className="label">Flat No.</label>
               <input
                 type="text"
@@ -59,7 +59,7 @@ function AccountPage({ user }) {
                 value={user.address.flatNo}
               />
             </span>
-            <span className="input-wrapper block pts">
+            <span className="input-wrapper block pt1 mb">
               <label className="label">Street name</label>
               <input
                 type="text"
@@ -68,7 +68,7 @@ function AccountPage({ user }) {
                 value={user.address.streetName}
               />
             </span>
-            <span className="input-wrapper block pts">
+            <span className="input-wrapper block pt1 mb">
               <label className="label">City</label>
               <input
                 type="text"
@@ -77,7 +77,7 @@ function AccountPage({ user }) {
                 value={user.address.city}
               />
             </span>
-            <span className="input-wrapper block pts">
+            <span className="input-wrapper block pt1 mb">
               <label className="label">Post code</label>
               <input
                 type="text"
@@ -92,7 +92,7 @@ function AccountPage({ user }) {
           <p className="mr">
             <b>Card No.</b> {`is `}
           </p>
-          <span className="input-wrapper pts">
+          <span className="input-wrapper pt1">
             <label className="label">Card No.</label>
             <input
               type="text"
@@ -107,7 +107,7 @@ function AccountPage({ user }) {
             <img className="card-logo ml" src={masterLogo} alt="" />
           )}
         </div>
-        <div className="next-payment">
+        <div className="next-payment mt4 mb">
           <p>
             <b>Next Payment</b> is on{" "}
             <span className="next-date">{user.subscription.nextPayment}</span>
