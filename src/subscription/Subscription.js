@@ -1,11 +1,12 @@
 import React from "react";
 import data from "./data.js";
 import RecipeCard from "./RecipeCard";
+import Header from "../subscriptionsPage/Header";
 
 const Subscription = () => {
   return (
     <div style={styles.subscriptionPage}>
-      <h1>So Fresh</h1>
+      <Header />
       <section>
         <h2>{data.subscriptionTitle}</h2>
         <div style={styles.flexRow}>
