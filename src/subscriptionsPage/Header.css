@@ -19,6 +19,14 @@
   font-size: 30px;
 }
 
+#AllSubscriptions-K {
+  font-size: 15px;
+}
+
+#Account-K {
+  font-size: 15px;
+}
+
 .headerButtons-K {
   display: flex;
   align-items: center;

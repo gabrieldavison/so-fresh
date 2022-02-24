@@ -7,11 +7,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <nav>
-        <Link to="/">All Subscriptions</Link>
-        <Link to="/account">Account</Link>
-        <Link to="/subscription">Subscription</Link>
-      </nav>
       <Routes>
         <Route path="/" element={<SubscriptionsPage />}></Route>
         <Route
