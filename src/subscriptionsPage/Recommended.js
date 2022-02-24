@@ -3,7 +3,7 @@ import SubscriptionRow from "./SubscriptionRow";
 
 const Recommended = ({ mealPlans }) => {
   return (
-    <div class="recommendationBox">
+    <div className="recommendationBox">
       <h2>RECOMMENDED</h2>
       <SubscriptionRow mealPlans={mealPlans} />
     </div>

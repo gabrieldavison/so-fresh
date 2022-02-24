@@ -13,7 +13,7 @@ Reccomendations object is something like this:
 const SubscriptionRow = ({ mealPlans }) => {
   const mealPlanNames = Object.keys(mealPlans);
   return (
-    <div class="row">
+    <div className="row">
       {mealPlanNames.map((mealPlanName) => {
         return <MealPlan mealPlanName={mealPlanName} meals={mealPlans} />;
       })}

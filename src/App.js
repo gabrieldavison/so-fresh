@@ -1,7 +1,5 @@
-import "./App.css";
 import AccountPage from "./Account/AccountPage";
 import users from "./datamock.json";
-
 
 function App() {
   const user = users[3];
