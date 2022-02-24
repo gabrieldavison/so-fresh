@@ -1,0 +1,25 @@
+.header-K {
+  display: flex;
+  background-color: rgb(5, 0, 255);
+  width: 100%;
+  height: 70px;
+  font-size: 10px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-K {
+  color: aliceblue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#soFresh-K {
+  font-size: 30px;
+}
+
+.headerButtons-K {
+  display: flex;
+  align-items: center;
+}

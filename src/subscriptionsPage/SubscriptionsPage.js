@@ -7,9 +7,9 @@ import "./SubscriptionsPage.css";
 
 const SubscriptionsPage = () => {
   return (
-    <div className="subscriptionPage">
+    <div className="subscriptionPage-K">
       <Header />
-      <div className="subscriptions">
+      <div className="subscriptions-K">
         <h1>SUBSCRIPTIONS</h1>
         <Recommended mealPlans={recommended} />
         <SubscriptionsGrid mealPlanRows={mealPlans} />
