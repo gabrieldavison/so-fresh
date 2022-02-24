@@ -19,6 +19,7 @@ const MealPlan = ({ mealPlanName, meals }) => {
     <div>
       <img
         src={meals[mealPlanName][mealsIndex]}
+        className="picture-K"
         alt="meal"
         width="120"
         height="120"

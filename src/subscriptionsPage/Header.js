@@ -16,6 +16,9 @@ const Header = () => {
           <Link className="text-K" id="Account-K" to="/account">
             Account
           </Link>
+          <Link className="text-K" id="Account-K" to="/survey">
+            Survey
+          </Link>
         </div>
       </div>
     </div>
