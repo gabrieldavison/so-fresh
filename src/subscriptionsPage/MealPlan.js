@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import "./MealPlan.css";
+import { Link } from "react-router-dom";
 
 /*
 Each Meal Plan is something like this:
@@ -33,7 +34,9 @@ const MealPlan = ({ mealPlanName, meals }) => {
           }
         />
       </div>
-      <h3 className="label-K">{mealPlanName}</h3>
+      <Link className="label-K" to="/subscription">
+        {mealPlanName}
+      </Link>
     </div>
   );
 };

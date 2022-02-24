@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,8 +10,12 @@ const Header = () => {
           SO FRESH
         </h2>
         <div className="headerButtons-K">
-          <h2 className="text-K">Subscriptions</h2>
-          <h2 className="text-K">Sign Up</h2>
+          <Link className="text-K" id="AllSubscriptions-K" to="/">
+            All Subscriptions
+          </Link>
+          <Link className="text-K" id="Account-K" to="/account">
+            Account
+          </Link>
         </div>
       </div>
     </div>
