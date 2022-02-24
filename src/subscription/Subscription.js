@@ -2,10 +2,11 @@ import React from "react";
 import data from "./data.js";
 import RecipeCard from "./RecipeCard";
 import Header from "../subscriptionsPage/Header";
+import style from "./Subscription.module.css";
 
 const Subscription = () => {
   return (
-    <div style={styles.subscriptionPage}>
+    <div className={style.subscriptionPage}>
       <Header />
       <section>
         <h2>{data.subscriptionTitle}</h2>
