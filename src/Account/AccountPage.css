@@ -6,7 +6,6 @@
 	background: #ffe7e7;
 	height: 100vh;
 	width: 100vw;
-	padding: 10px;
 	font-size: 20px;
 }
 
@@ -93,6 +92,10 @@ input::placeholder {
 	margin-top: 1rem;
 }
 
+.mt4 {
+	margin-top: 4rem;
+}
+
 .mr {
 	margin-right: 1rem;
 }
@@ -100,12 +103,25 @@ input::placeholder {
 .ml {
 	margin-left: 1rem;
 }
+
+.mb {
+	margin-bottom: 1rem;
+}
+
+.mb4 {
+	margin-bottom: 4rem;
+}
+
 .pts {
 	padding-top: 0.3rem;
 }
 
 .pt1 {
 	padding-top: 1rem;
+}
+
+.pt1p5 {
+	padding-top: 1.5rem;
 }
 
 .block {
