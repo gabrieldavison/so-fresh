@@ -4,6 +4,7 @@ import Subscription from "./subscription/Subscription";
 import Recipe from "./recipe/Recipe";
 import users from "./datamock.json";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import "./Normalize.css";
 
 function App() {
   return (
