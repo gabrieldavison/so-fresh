@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './AccountPage.css';
+import './RemoveDefaultStyle.css';
 import visaLogo from '../visa-logo.png';
 import masterLogo from '../mc-logo.png';
 
@@ -32,7 +33,7 @@ function AccountPage({ user }) {
 					<p>
 						<b>PASSWORD</b> {`is `}
 						<span className="input-wrapper pt1">
-							<span className="label">Password</span>
+							<label className="label">Password</label>
 							<input type="password" placeholder="Password" value={user.password} />
 						</span>
 					</p>
