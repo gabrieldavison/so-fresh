@@ -13,22 +13,6 @@ Each Meal Plan is something like this:
 const MealPlan = ({ mealPlanName, meals }) => {
   let [mealsIndex, setMealsIndex] = useState(0);
 
-  const handleMealsIndex = (direction) => {
-    if (direction === "right") {
-      if (mealsIndex < meals.length - 1) {
-        return (mealsIndex += 1);
-      } else {
-        return (mealsIndex = 0);
-      }
-    } else {
-      if (mealsIndex > 0) {
-        return (mealsIndex -= 1);
-      } else {
-        return (mealsIndex = meals.length - 1);
-      }
-    }
-  };
-
   return (
     <div>
       <img
@@ -37,7 +21,18 @@ const MealPlan = ({ mealPlanName, meals }) => {
         width="120"
         height="120"
       />
-      <h3 class="label">{mealPlanName}</h3>
+      <div className="buttonContainer">
+        <Button
+          onClick={() => mealsIndex > 0 && setMealsIndex((mealsIndex -= 1))}
+        />
+        <Button
+          onClick={() =>
+            mealsIndex < meals[mealPlanName].length - 1 &&
+            setMealsIndex((mealsIndex += 1))
+          }
+        />
+      </div>
+      <h3 className="label">{mealPlanName}</h3>
     </div>
   );
 };

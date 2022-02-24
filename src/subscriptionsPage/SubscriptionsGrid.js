@@ -21,7 +21,7 @@ import SubscriptionRow from "./SubscriptionRow";
 */
 const SubscriptionsGrid = ({ mealPlanRows }) => {
   return (
-    <div class="subscriptionGrid">
+    <div className="subscriptionGrid">
       {mealPlanRows.map((mealPlanRow) => {
         return <SubscriptionRow mealPlans={mealPlanRow} />;
       })}
