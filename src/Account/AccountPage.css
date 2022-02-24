@@ -1,168 +1,165 @@
 .AccountPage {
-  height: 100%;
-  color: #0500ff;
-  text-align: center;
-  font-family: "Roboto";
-  background: #ffe7e7;
-  height: 100vh;
-  width: 100vw;
-  font-size: 20px;
+	height: 100%;
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+	font-size: 20px;
 }
 
 *:focus {
-  outline: none;
+	outline: none;
 }
 
 .title {
-  font-weight: 900;
-  font-size: 5rem;
+	font-weight: 900;
+	font-size: 5rem;
 }
 
 .btn {
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-  border: 2px solid;
-  box-sizing: border-box;
-  border-radius: 10px;
-  text-align: center;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  font-weight: 500;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	border: 2px solid;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	font-weight: 500;
 
-  /* Removing button default style */
-  background: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+	/* Removing button default style */
+	background: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 
-  transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
 }
 
 .btn:hover {
-  box-shadow: 5px 5px;
+	box-shadow: 5px 5px;
 }
 
 .address-input {
-  display: block;
+	display: block;
 }
 
 .plan > p,
 .card-info > p,
 .next-payment > p {
-  display: inline;
+	display: inline;
 }
 
 .vegan {
-  color: #85cc77;
-  border-color: #85cc77;
+	color: #85cc77;
+	border-color: #85cc77;
 }
 
 .address-inputs {
-  width: fit-content;
+	width: fit-content;
 }
 
 .address {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 input {
-  border: none;
-  box-sizing: border-box;
-  border-radius: 7px;
-  transition: box-shadow 0.5s;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 7px;
-  color: #0500ff;
-  height: -webkit-fill-available;
+	border: none;
+	box-sizing: border-box;
+	border-radius: 7px;
+	transition: box-shadow 0.5s;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 7px;
+	color: #0500ff;
+	height: -webkit-fill-available;
 }
 
 input:focus {
-  border: 3px solid #0500ff;
+	border: 3px solid #0500ff;
 }
 
 input::placeholder {
-  color: #0500ff;
-  font-weight: 200;
+	color: #0500ff;
+	font-weight: 200;
 }
 
 .mt {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .mt4 {
-  margin-top: 4rem;
+	margin-top: 4rem;
 }
 
 .mr {
-  margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .ml {
-  margin-left: 1rem;
+	margin-left: 1rem;
 }
 
 .mb {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .mb4 {
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 .pts {
-  padding-top: 0.3rem;
+	padding-top: 0.3rem;
 }
 
 .pt1 {
-  padding-top: 1rem;
+	padding-top: 1rem;
 }
 
 .pt1p5 {
-  padding-top: 1.5rem;
+	padding-top: 1.5rem;
 }
 
 .block {
-  display: block;
+	display: block;
 }
 
 .card-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .card-option {
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-  border: 2px solid;
-  box-sizing: border-box;
-  border-radius: 10px;
-  text-align: center;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  font-weight: 500;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	border: 2px solid;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	font-weight: 500;
 }
 
 .card-logo {
-  display: inline;
-  height: 50px;
+	display: inline;
+	height: 50px;
 }
 
 .next-date {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .input-wrapper {
-  position: relative;
+	position: relative;
 }
 .label {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: max-content;
+	display: inline-block;
+	font-size: 0.7rem;
+	font-weight: 600;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: max-content;
 }
