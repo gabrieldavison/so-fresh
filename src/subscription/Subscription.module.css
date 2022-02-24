@@ -1,5 +1,21 @@
-.subscriptopPage {
-  max-width: 1000px;
+.subscriptionPage {
   margin: auto;
   background-color: #ffe7e7;
+}
+.subscriptionImage {
+  width: 500px;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.recipeCard {
+  padding-right: 1rem;
+  justify-content: center;
+  width: 20%;
+}
+.subscriptionSummary {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }

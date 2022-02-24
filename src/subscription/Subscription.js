@@ -10,21 +10,21 @@ const Subscription = () => {
       <Header />
       <section>
         <h2>{data.subscriptionTitle}</h2>
-        <div style={styles.flexRow}>
+        <div className={style.flexRow}>
           <div>
             <img
-              style={styles.subscriptionImage}
+              className={style.subscriptionImage}
               src={data.subscriptionImage}
             ></img>
           </div>
-          <div style={styles.subscriptionSummary}>
+          <div className={style.subscriptionSummary}>
             <p>{data.subscriptionSummary}</p>
           </div>
         </div>
       </section>
-      <section style={styles.flexRow}>
+      <section className={style.flexRow}>
         {data.recipes.map((recipe) => (
-          <div style={styles.recipeCard}>
+          <div className={style.recipeCard}>
             <RecipeCard key={recipe.title} data={recipe} />
           </div>
         ))}
@@ -33,28 +33,4 @@ const Subscription = () => {
   );
 };
 
-const styles = {
-  subscriptionPage: {
-    maxWidth: "1000px",
-    margin: "auto",
-    backgroundColor: "#FFE7E7",
-  },
-  subscriptionImage: {
-    width: "500px",
-  },
-  flexRow: {
-    display: "flex",
-    flexDirection: "row",
-  },
-  recipeCard: {
-    paddingRight: "1rem",
-    justifyContent: "center",
-    width: "20%",
-  },
-  subscriptionSummary: {
-    display: "flex",
-    alignItems: "center",
-    padding: "1rem",
-  },
-};
 export default Subscription;
