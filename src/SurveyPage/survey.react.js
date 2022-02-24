@@ -1,9 +1,10 @@
-import React from 'react';
-import './Survey.css';
-import meatImage from  './meat.png';
-import leafImage from './leaf.png';
-import { Carousel } from 'react-responsive-carousel'
+import React from "react";
+import "./Survey.css";
+import meatImage from "./meat.png";
+import leafImage from "./leaf.png";
+import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Header from "../subscriptionsPage/Header";
 
 class Question {
   constructor(image, question, checkBoxData) {
@@ -24,37 +25,38 @@ export default function Survey() {
   ];
 
   return (
-    <div className = 'survey-page'>
-        <div className="Survey">
+    <div className="survey-page">
+      <Header />
+      <div className="Survey">
         <Carousel>
-            {questionData.map((question) => {
+          {questionData.map((question) => {
             return (
-                <div key={questionData.indexOf(question)}>
+              <div key={questionData.indexOf(question)}>
                 <div className="question-div">
-                    <img
+                  <img
                     src={question.image}
                     className="survey-icon"
                     alt="Not found"
-                    />
-                    <span>{question.question}</span>
+                  />
+                  <span className="spanClass">{question.question}</span>
                 </div>
                 <div className="checkbox-div">
-                    {question.checkBoxData.map((item) => {
+                  {question.checkBoxData.map((item) => {
                     return (
-                        <div>
+                      <div>
                         <input type="Checkbox" value={item} />
                         <label for={item} className="default-blue-text">
-                            {item}
+                          {item}
                         </label>
-                        </div>
+                      </div>
                     );
-                    })}
+                  })}
                 </div>
-                </div>
+              </div>
             );
-            })}
+          })}
         </Carousel>
-        </div>
+      </div>
     </div>
   );
 }

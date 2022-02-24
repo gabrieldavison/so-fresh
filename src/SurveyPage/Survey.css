@@ -1,61 +1,60 @@
 .Survey {
-    margin: auto;
-    height: 100%;
-    width: 80%;
-    position: relative;
-    padding: 10px;
+  margin: auto;
+  height: 100%;
+  width: 80%;
+  position: relative;
+  padding: 10px;
 }
-.survey-page{
-    height: 100%;
-	color: #0500ff;
-	text-align: center;
-	font-family: 'Roboto';
-	background: #ffe7e7;
-	height: 100vh;
-	width: 100vw;
-	font-size: 20px;
+.survey-page {
+  height: 100%;
+  color: #0500ff;
+  text-align: center;
+  font-family: "Roboto";
+  background: #ffe7e7;
+  height: 100vh;
+  width: 100vw;
+  font-size: 20px;
 }
 
-
-.checkbox-div{
-    display: inline-block;
-    position: relative;
-    top: 20%; 
-    padding: 40px;
+.checkbox-div {
+  display: inline-block;
+  position: relative;
+  top: 20%;
+  padding: 40px;
 }
 
 .default-blue-text {
-    font-size:20px;
-    font-weight: bold;
-    color: #0500ff;
-  }
-  
-span{
-    font-size: 40px;;
-    display: block;
-    position: relative;
-    font-weight: bold;
-    color: #0500ff;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0500ff;
 }
 
-.survey-icon{
-    position: relative;
-    display: inline-block;
-    margin: auto;
-    height: auto;
-    width: auto;
-    max-width: 400px;
-    max-height: 600px;
-    top: 20%;
-    padding: 40px;
+.spanClass {
+  font-size: 40px;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  color: #0500ff;
 }
 
-.question-div{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
+.survey-icon {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 600px;
+  top: 20%;
+  padding: 40px;
+}
+
+.question-div {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
