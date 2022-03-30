@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Button from "./Button";
 import "./MealPlan.css";
 import { Link } from "react-router-dom";
+import Left from "./Pictures/noun-left-arrow-2294276.svg";
+import Right from "./Pictures/noun-right-arrow-2294274.svg";
 
 /*
 Each Meal Plan is something like this:
@@ -16,7 +18,7 @@ const MealPlan = ({ mealPlanName, meals }) => {
   let [mealsIndex, setMealsIndex] = useState(0);
 
   return (
-    <div>
+    <div className="container-K">
       <img
         src={meals[mealPlanName][mealsIndex]}
         className="picture-K"
@@ -27,17 +29,17 @@ const MealPlan = ({ mealPlanName, meals }) => {
       <div className="buttonContainer-K">
         <Button
           onClick={() => mealsIndex > 0 && setMealsIndex((mealsIndex -= 1))}
+          ImageSrc={Left}
         />
         <Button
           onClick={() =>
             mealsIndex < meals[mealPlanName].length - 1 &&
             setMealsIndex((mealsIndex += 1))
           }
+          ImageSrc={Right}
         />
       </div>
-      <Link className="label-K" to="/subscription">
-        {mealPlanName}
-      </Link>
+      <Link to="/subscription">{mealPlanName}</Link>
     </div>
   );
 };
