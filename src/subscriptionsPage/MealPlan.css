@@ -4,11 +4,13 @@
   padding-top: 10px;
 }
 
-.label-K {
-  padding-left: 20px;
-  margin: 20px;
-}
-
 .picture-K {
   padding-top: 20px;
+}
+
+.container-K {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
