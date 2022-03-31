@@ -6,19 +6,19 @@ const Recipe = () => {
   return (
     <div style={styles.recipe}>
       <Header />
-      <h2>{data.recipeTitle}</h2>
+      <h2 data-cy="recipe-title">{data.recipeTitle}</h2>
       <div style={styles.recipeSummary}>
         <div>
-          <img src={data.recipeImage}></img>
+          <img data-cy="recipe-image" src={data.recipeImage}></img>
         </div>
         <div>
           <div style={styles.recipeDescription}>
-            <p>{data.recipeDescription}</p>
+            <p data-cy="recipe-description">{data.recipeDescription}</p>
           </div>
           <div style={styles.ingredientsAllergens}>
             <section style={styles.listWrapper}>
               <h3>Ingredients</h3>
-              <ul>
+              <ul data-cy="ingredients-list">
                 {data.ingredients.map((ingredient, i) => (
                   <li key={i}>{ingredient}</li>
                 ))}
@@ -26,7 +26,7 @@ const Recipe = () => {
             </section>
             <section style={styles.listWrapper}>
               <h3>Allergens</h3>
-              <ul>
+              <ul data-cy="allergens-list">
                 {data.allergens.map((allergen, i) => (
                   <li key={i}>{allergen}</li>
                 ))}

@@ -8,20 +8,23 @@ const Subscription = () => {
     <div style={styles.subscriptionPage}>
       <Header />
       <section>
-        <h2>{data.subscriptionTitle}</h2>
+        <h2 data-cy="subscription-title">{data.subscriptionTitle}</h2>
         <div style={styles.flexRow}>
           <div>
             <img
+              data-cy="subscription-image"
               style={styles.subscriptionImage}
               src={data.subscriptionImage}
             ></img>
           </div>
           <div style={styles.subscriptionSummary}>
-            <p>{data.subscriptionSummary}</p>
+            <p data-cy="subscription-summary">{data.subscriptionSummary}</p>
           </div>
         </div>
       </section>
-      <section style={styles.flexRow}>
+      <section
+        data-cy="recipe-card-container"
+       style={styles.flexRow}>
         {data.recipes.map((recipe) => (
           <div style={styles.recipeCard}>
             <RecipeCard key={recipe.title} data={recipe} />
