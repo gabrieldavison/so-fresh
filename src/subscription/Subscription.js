@@ -5,39 +5,41 @@ import Header from "../subscriptionsPage/Header";
 
 const Subscription = () => {
   return (
-    <div style={styles.subscriptionPage}>
+    <>
       <Header />
-      <section>
-        <h2 data-cy="subscription-title">{data.subscriptionTitle}</h2>
-        <div style={styles.flexRow}>
-          <div>
-            <img
-              data-cy="subscription-image"
-              style={styles.subscriptionImage}
-              src={data.subscriptionImage}
-            ></img>
+      <div style={styles.subscriptionPage}>
+        <section>
+          <h2 data-cy="subscription-title">{data.subscriptionTitle}</h2>
+          <div style={styles.flexRow}>
+            <div>
+              <img
+                data-cy="subscription-image"
+                style={styles.subscriptionImage}
+                src={data.subscriptionImage}
+              ></img>
+            </div>
+            <div style={styles.subscriptionSummary}>
+              <p data-cy="subscription-summary">{data.subscriptionSummary}</p>
+            </div>
           </div>
-          <div style={styles.subscriptionSummary}>
-            <p data-cy="subscription-summary">{data.subscriptionSummary}</p>
-          </div>
-        </div>
-      </section>
-      <section
-        data-cy="recipe-card-container"
-       style={styles.flexRow}>
-        {data.recipes.map((recipe) => (
-          <div style={styles.recipeCard}>
-            <RecipeCard key={recipe.title} data={recipe} />
-          </div>
-        ))}
-      </section>
-    </div>
+        </section>
+        <section
+          data-cy="recipe-card-container"
+          style={styles.flexRow}>
+          {data.recipes.map((recipe) => (
+            <div style={styles.recipeCard}>
+              <RecipeCard key={recipe.title} data={recipe} />
+            </div>
+          ))}
+        </section>
+      </div>
+    </>
   );
 };
 
 const styles = {
   subscriptionPage: {
-    maxWidth: "1000px",
+    maxWidth: "1200px",
     margin: "auto",
     backgroundColor: "#FFE7E7",
   },
@@ -57,6 +59,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     padding: "1rem",
+    fontSize: "1.3rem"
   },
 };
 export default Subscription;
