@@ -3,3 +3,7 @@
     "baseUrl": "http://localhost:3000",
     "integrationFolder": "cypress/tests"
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90572e7c294cc5e86bb83f03800a29587a616e54

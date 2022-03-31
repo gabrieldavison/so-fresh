@@ -31,7 +31,7 @@ function AccountPage({ user }) {
 				</p>
 				<div className="password">
 					<p>
-						<b>PASSWORD</b> {`is `}
+						<b data-cy="password-text">PASSWORD</b> {`is `}
 						<span className="input-wrapper pt1p5 ml mt4">
 							<label className="label">Password</label>
 							<input type="password" placeholder="Password" value={user.password} className="ac-input" />
@@ -41,7 +41,7 @@ function AccountPage({ user }) {
 
 				<div className="address">
 					<p>
-						<b>ADDRESS</b> is
+						<b data-cy="address-text">ADDRESS</b> is
 					</p>
 					<div className="address-inputs ml">
 						<span className="input-wrapper block pt1 mb">
@@ -84,7 +84,7 @@ function AccountPage({ user }) {
 				</div>
 				<div className="card-info">
 					<p className="mr">
-						<b>Card No.</b> {`is `}
+						<b data-cy="card-text">Card No.</b> {`is `}
 					</p>
 					<span className="input-wrapper pt1">
 						<label className="label">Card No.</label>
