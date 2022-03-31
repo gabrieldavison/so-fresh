@@ -5,31 +5,31 @@ const data = {
   subscriptionImage: "./img/subscriptionImage.jpeg",
   recipes: [
     {
-      title: "recipe 1",
+      title: "Recipe One",
       recipeImage: "/img/recipe1Image.jpeg",
       recipeSummary:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eros augue, ac aliquam libero facilisis at. Maecenas tempor pharetra aliquet. Quisque dolor odio, blandit in sem eu, posuere eleifend nibh.",
     },
     {
-      title: "recipe 2",
+      title: "Recipe Two",
       recipeImage: "./img/recipe2Image.jpeg",
       recipeSummary:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eros augue, ac aliquam libero facilisis at. Maecenas tempor pharetra aliquet. Quisque dolor odio, blandit in sem eu, posuere eleifend nibh.",
     },
     {
-      title: "recipe 3",
+      title: "Recipe Three",
       recipeImage: "./img/recipe3Image.jpeg",
       recipeSummary:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eros augue, ac aliquam libero facilisis at. Maecenas tempor pharetra aliquet. Quisque dolor odio, blandit in sem eu, posuere eleifend nibh.",
     },
     {
-      title: "recipe 4",
+      title: "Recipe Four",
       recipeImage: "./img/recipe4Image.jpeg",
       recipeSummary:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eros augue, ac aliquam libero facilisis at. Maecenas tempor pharetra aliquet. Quisque dolor odio, blandit in sem eu, posuere eleifend nibh.",
     },
     {
-      title: "recipe 5",
+      title: "Recipe Five",
       recipeImage: "./img/recipe5Image.jpeg",
       recipeSummary:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eros augue, ac aliquam libero facilisis at. Maecenas tempor pharetra aliquet. Quisque dolor odio, blandit in sem eu, posuere eleifend nibh.",
