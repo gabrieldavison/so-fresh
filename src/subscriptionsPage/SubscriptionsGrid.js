@@ -23,8 +23,8 @@ import "./SubscriptionGrid.css";
 const SubscriptionsGrid = ({ mealPlanRows }) => {
   return (
     <div className="subscriptionGrid-K">
-      {mealPlanRows.map((mealPlanRow) => {
-        return <SubscriptionRow mealPlans={mealPlanRow} />;
+      {mealPlanRows.map((mealPlanRow, index) => {
+        return <SubscriptionRow mealPlans={mealPlanRow} rowIndex={index} />;
       })}
     </div>
   );

@@ -12,12 +12,19 @@ Reccomendations object is something like this:
 
 }*/
 
-const SubscriptionRow = ({ mealPlans }) => {
+const SubscriptionRow = ({ mealPlans, rowIndex }) => {
   const mealPlanNames = Object.keys(mealPlans);
   return (
     <div className="row-K">
-      {mealPlanNames.map((mealPlanName) => {
-        return <MealPlan mealPlanName={mealPlanName} meals={mealPlans} />;
+      {mealPlanNames.map((mealPlanName, index) => {
+        return (
+          <MealPlan
+            mealPlanName={mealPlanName}
+            meals={mealPlans}
+            mealIndex={index}
+            rowIndex={rowIndex}
+          />
+        );
       })}
     </div>
   );
